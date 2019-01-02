@@ -14,7 +14,7 @@
 -->
 <!-- 页面向Action传参 -->
 <struts>
-    <package name="Struts01" namespace="/demo" extends="struts-default">
+    <package name="demo" namespace="/demo" extends="struts-default">
         <action name="hello" class="com.lmt.action.HelloAction_tags" method="sayHello">
             <result name="ok">/WEB-INF/jsp/hello2.jsp</result>
         </action>
