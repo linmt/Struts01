@@ -1,0 +1,5 @@
+hello案例测试
+struts.xml、web.xml、HelloAction、hello.jsp
+
+页面向action传参、从Action取值
+User、HelloAction2、struts.xml、hello2.jsp、hi.html
