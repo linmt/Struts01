@@ -26,6 +26,7 @@ public class HelloAction2 {
 
     public void setUser(User user) {
         this.user = user;
+        System.out.println("注入user...");
     }
 
     public String sayHello() {
