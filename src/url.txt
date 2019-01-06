@@ -3,3 +3,5 @@ http://localhost:8080/Struts01/demo/hello.action
 http://localhost:8080/Struts01/hi.html
 
 http://localhost:8080/Struts01/cost/findCost.action
+
+http://localhost:8080/Struts01/OGNL/hello.action

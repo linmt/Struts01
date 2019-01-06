@@ -26,4 +26,10 @@
             <result name="success">/WEB-INF/cost/cost_list.jsp</result>
         </action>
     </package>
+    <!-- OGNL -->
+    <package name="OGNL" namespace="/OGNL" extends="struts-default">
+        <action name="hello" class="com.lmt.action.HelloAction3" method="sayHello">
+            <result name="success">/WEB-INF/jsp/hello3.jsp</result>
+        </action>
+    </package>
 </struts>

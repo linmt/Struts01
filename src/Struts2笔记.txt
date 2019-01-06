@@ -6,14 +6,8 @@ User、HelloAction2、struts.xml、hello2.jsp、hi.html
 
 NETCTOSS
 资费列表
-<c:choose>
-    <c:when test="${c.status==0}">开通</c:when>
-    <c:otherwise>暂停</c:otherwise>
-</c:choose>
+struts.xml、Cost、CostDao、CostDaoImpl、DaoFactory、FindCostAction、cost_list.jsp
+其他相关的js、style、images、public文件夹
 
-<td>
-    <input type="button" value="启用" class="btn_start" onclick="startFee();" />
-    <!--只传id，一是传的数据量少，二是防止多人修改产生意外-->
-    <input type="button" value="修改" class="btn_modify" onclick="location.href='toUpdateCost.do?cost_id=${c.cost_id}';" />
-    <input type="button" value="删除" class="btn_delete" onclick="deleteFee(${c.cost_id});" />
-</td>
+OGNL
+struts.xml、HelloAction3、hello3.jsp、User2
