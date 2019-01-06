@@ -12,14 +12,17 @@
     </package>
 </struts>
 -->
-<!-- 页面向Action传参 -->
+
 <struts>
+    <!-- 页面向Action传参 -->
     <package name="demo" namespace="/demo" extends="struts-default">
         <action name="hello" class="com.lmt.action.HelloAction2" method="sayHello">
             <result name="ok">/WEB-INF/jsp/hello2.jsp</result>
         </action>
-        <!-- 资费列表 -->
-        <action name="cost" class="netctoss.action.FindCostAction" method="execute">
+    </package>
+    <!-- 资费列表 -->
+    <package name="cost" namespace="/cost" extends="struts-default">
+        <action name="findCost" class="netctoss.action.FindCostAction" method="execute">
             <result name="success">/WEB-INF/cost/cost_list.jsp</result>
         </action>
     </package>
