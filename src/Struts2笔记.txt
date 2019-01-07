@@ -14,3 +14,6 @@ struts.xml、HelloAction3、hello3.jsp、User2
 
 ValueStack
 HelloAction3、hello3.jsp
+
+OGNL重构资费列表页面（格式化日期）
+struts.xml、cost_list2.jsp
