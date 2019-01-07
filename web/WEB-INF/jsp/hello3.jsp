@@ -32,7 +32,7 @@
 <h1>演示ValueStack</h1>
 
 <h1>1.debug标签</h1>
-<h1></h1>
+<p><s:debug/></p>
 
 <h1>2.输出栈顶</h1>
 <h1><s:property/></h1>
@@ -59,6 +59,14 @@
         <s:else>
             <s:property value="#p"/>
         </s:else>
+    </s:iterator>
+</h1>
+<h1>
+    <s:iterator value="cities">
+        <s:property/>
+    </s:iterator>
+    <s:iterator value="cities" var="p">
+        <s:property value="#p"/>
     </s:iterator>
 </h1>
 </body>

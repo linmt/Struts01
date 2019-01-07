@@ -11,3 +11,6 @@ struts.xml、Cost、CostDao、CostDaoImpl、DaoFactory、FindCostAction、cost_l
 
 OGNL
 struts.xml、HelloAction3、hello3.jsp、User2
+
+ValueStack
+HelloAction3、hello3.jsp
