@@ -7,3 +7,5 @@ http://localhost:8080/Struts01/cost/findCost.action
 http://localhost:8080/Struts01/OGNL/hello.action
 
 http://localhost:8080/Struts01/cost2/findCost.action
+
+http://localhost:8080/Struts01/login/form.action

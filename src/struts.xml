@@ -38,4 +38,18 @@
             <result name="success">/WEB-INF/cost/cost_list2.jsp</result>
         </action>
     </package>
+    <!-- 登录案例 -->
+    <package name="login" namespace="/login" extends="struts-default">
+        <action name="form">
+            <result name="success">/WEB-INF/login.jsp</result>
+        </action>
+        <action name="check" class="netctoss.action.CheckAction">
+            <result name="success">/WEB-INF/success.jsp</result>
+            <result name="login">/WEB-INF/login.jsp</result>
+        </action>
+        <action name="check2" class="netctoss.action.CheckAction2">
+            <result name="success">/WEB-INF/success2.jsp</result>
+            <result name="login">/WEB-INF/login2.jsp</result>
+        </action>
+    </package>
 </struts>

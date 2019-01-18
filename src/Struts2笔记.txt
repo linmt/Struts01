@@ -17,3 +17,9 @@ HelloAction3、hello3.jsp
 
 OGNL重构资费列表页面（格式化日期）
 struts.xml、cost_list2.jsp
+
+登录案例
+struts.xml、WEB-INF\login.jsp、netctoss\action\CheckAction.java、success.jsp
+
+登录案例——用对象接收参数
+struts.xml、WEB-INF\login.jsp、netctoss\action\CheckAction.java、success.jsp、User
