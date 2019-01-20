@@ -19,7 +19,16 @@ OGNL重构资费列表页面（格式化日期）
 struts.xml、cost_list2.jsp
 
 登录案例
-struts.xml、WEB-INF\login.jsp、netctoss\action\CheckAction.java、success.jsp
+struts.xml、login.jsp、CheckAction.java、success.jsp
 
 登录案例——用对象接收参数
-struts.xml、WEB-INF\login.jsp、netctoss\action\CheckAction.java、success.jsp、User
+struts.xml、login2.jsp、CheckAction2.java、success.jsp、netctoss\entity\User.java
+
+session的创建和使用
+方式一
+CheckAction2.java、success.jsp
+方式二
+CheckAction2.java、success.jsp、BaseAction、TestAction
+
+stream Result的使用+session的创建和使用方式三
+struts.xml、login3.jsp、CheckLoginAction、ImageUtil、CheckLoginAction、AdminDao、AdminDaoImpl、DaoFactory、Admin

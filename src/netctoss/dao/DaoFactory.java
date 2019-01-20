@@ -13,4 +13,11 @@ public class DaoFactory {
     public static CostDao getCostDao() {
         return costDao;
     }
+
+    //stream Result的使用
+    private static AdminDao adminDao = new AdminDaoImpl();
+
+    public static AdminDao getAdminDao() {
+        return adminDao;
+    }
 }

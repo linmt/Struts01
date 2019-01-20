@@ -7,10 +7,14 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-<head>
-    <title>登录成功</title>
-</head>
+<head></head>
 <body>
     <h1>${error}</h1>
+    <!-- 方式一 -->
+    <p>测试从session中取值：${loginName}</p></br>
+    <!-- 方式二 -->
+    <p>${demo1}</p></br>
+    <p>${demo2}</p></br>
+    <p>${demo3}</p></br>
 </body>
 </html>

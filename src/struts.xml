@@ -20,25 +20,29 @@
             <result name="ok">/WEB-INF/jsp/hello2.jsp</result>
         </action>
     </package>
+
     <!-- 资费列表 -->
     <package name="cost" namespace="/cost" extends="struts-default">
         <action name="findCost" class="netctoss.action.FindCostAction" method="execute">
             <result name="success">/WEB-INF/cost/cost_list.jsp</result>
         </action>
     </package>
+
     <!-- OGNL -->
     <package name="OGNL" namespace="/OGNL" extends="struts-default">
         <action name="hello" class="com.lmt.action.HelloAction3" method="sayHello">
             <result name="success">/WEB-INF/jsp/hello3.jsp</result>
         </action>
     </package>
+
     <!-- OGNL重构资费列表 -->
     <package name="cost2" namespace="/cost2" extends="struts-default">
         <action name="findCost" class="netctoss.action.FindCostAction" method="execute">
             <result name="success">/WEB-INF/cost/cost_list2.jsp</result>
         </action>
     </package>
-    <!-- 登录案例 -->
+
+    <!-- 登录案例、获取session -->
     <package name="login" namespace="/login" extends="struts-default">
         <action name="form">
             <result name="success">/WEB-INF/login.jsp</result>
@@ -47,9 +51,41 @@
             <result name="success">/WEB-INF/success.jsp</result>
             <result name="login">/WEB-INF/login.jsp</result>
         </action>
+
+        <action name="form2">
+            <result name="success">/WEB-INF/login2.jsp</result>
+        </action>
         <action name="check2" class="netctoss.action.CheckAction2">
-            <result name="success">/WEB-INF/success2.jsp</result>
+            <result name="success">/WEB-INF/success.jsp</result>
             <result name="login">/WEB-INF/login2.jsp</result>
+        </action>
+    </package>
+
+    <!-- 获取session -->
+    <package name="test" namespace="/test" extends="struts-default">
+        <action name="test" class="netctoss.action.TestAction" method="execute">
+            <result name="success">/WEB-INF/success.jsp</result>
+        </action>
+    </package>
+
+    <!-- stream Result的使用 -->
+    <!-- http://localhost:8080/Struts01/stream/toLogin.action -->
+    <package name="stream" namespace="/stream" extends="struts-default">
+        <!-- 打开登录页 -->
+        <!-- class可以省略不写，当省略时Struts2会自动调用ActionSupport类。该类中有一个方法execute，返回了success。-->
+        <action name="toLogin">
+            <result name="success">/WEB-INF/login3.jsp</result>
+        </action>
+        <!-- 登录校验 -->
+        <action name="check" class="netctoss.action.CheckLoginAction">
+            <result name="success">/WEB-INF/success.jsp</result>
+            <result name="fail">/WEB-INF/login3.jsp</result>
+        </action>
+        <!-- 生成验证码 -->
+        <action name="createImage" class="netctoss.action.CreateImageAction">
+            <result name="success" type="stream">
+                <param name="inputName">imageStream</param>
+            </result>
         </action>
     </package>
 </struts>
